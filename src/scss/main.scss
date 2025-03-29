@@ -4,6 +4,36 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .hidden {
   display: none;
+}
+
+.nav-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../../public/images/header.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+.fourth-module-container {
+  text-align: center;
+
+  .fourth-image {
+    width: 100%;
+  }
+  h3 {
+    margin: 3rem 0 0.5rem;
+  }
 }

@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Evaluación final Sandra Marín</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./scss/main.scss" />
@@ -16,7 +18,11 @@
     <header>
       <section class="nav-logo-container">
         <nav>
-          <img src="./images/menu-hamburger.png" alt="icono menu" />
+          <img
+            class="menu-hamburguer"
+            src="./images/menu-hamburger.png"
+            alt="icono menu"
+          />
           <div class="hidden">
             <ul>
               <li><a href="">Productos</a></li>
@@ -26,7 +32,7 @@
             </ul>
           </div>
         </nav>
-        <img src="./images/logo.png" alt="logo de la web" />
+        <img class="logo-img" src="./images/logo.png" alt="logo de la web" />
       </section>
 
       <section class="hero-container">
@@ -38,20 +44,20 @@
     </header>
 
     <main>
-      <section>
+      <section class="second-module-container">
         <h2>Volverse organizado se siente mejor con OPEN SPACES</h2>
-        <div class="article-container">
-          <article>
+        <div class="second-article-container">
+          <article class="second-article-1">
             <img src="./images/icon_1.png" alt="" />
             <h3>Lo que necesitas</h3>
             <p>Una línea de productos diseñados para todos tus espacios</p>
           </article>
-          <article>
+          <article class="second-article-2">
             <img src="./images/Biodegradable-bag.png" alt="" />
             <h3>Materia primas sustentables</h3>
             <p>Todos los productos con materias primas sustentables</p>
           </article>
-          <article>
+          <article class="second-article-3">
             <img src="./images/Park.png" alt="" />
             <h3>Guía</h3>
             <p>Soporte y asesoramiento para ayudarte con tu objetivo</p>
@@ -59,8 +65,8 @@
         </div>
       </section>
 
-      <section>
-        <article>
+      <section class="third-module-container">
+        <article class="third-article-1">
           <img src="./images/go_6.png" alt="" />
           <h3>Envío gratis garantizado</h3>
           <p>Envío gratis en compras desde 100</p>
@@ -68,11 +74,19 @@
         </article>
       </section>
 
-      <section>
-        <h3>Disfruta creando espacios</h3>
-        <p>Una línea de productos diseñados para todos tus espacios</p>
-        <a href="">Comprar ahora</a>
-        <img src="./images/creando-espacios.jpg" alt="imagen baño" />
+      <section class="fourth-module-container">
+        <article class="text-content">
+          <h3>Disfruta creando espacios</h3>
+          <p>Una línea de productos diseñados para todos tus espacios</p>
+          <a href="">Comprar ahora</a>
+        </article>
+        <div class="image-content">
+          <img
+            class="fourth-image"
+            src="./images/creando-espacios.jpg"
+            alt="imagen baño"
+          />
+        </div>
       </section>
     </main>
 
