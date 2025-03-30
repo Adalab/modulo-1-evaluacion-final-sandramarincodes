@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  color: #0c474b;
 }
 
 .hidden {
@@ -27,7 +28,7 @@ h3 {
 }
 
 .p-small {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 header {
@@ -41,8 +42,15 @@ header {
 
 .nav-logo-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  padding-top: 1rem;
+}
+.menu-hamburguer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 3.4rem 2.5rem;
 }
 
 .hero-article {
@@ -71,17 +79,26 @@ header {
     margin-top: 40px;
     color: white;
   }
-  
 }
 
 .fourth-module-container {
   text-align: center;
+  background-color: #f0ebe5;
+}
 
-  .fourth-image {
-    width: 100%;
-    height: auto;
-  }
-  h3 {
-    margin: 3rem 0 0.5rem;
-  }
+.fourth-module-container .text-content {
+  padding: 5.4rem 1.6875rem;
+}
+
+.text-content .primary-btn {
+  display: inline-block;
+  margin-top: 2.06rem;
+}
+
+.image-content .fourth-image {
+  width: 100%;
+  height: auto;
+}
+.fourth-module-container h2 {
+  margin: 3rem 0 0.5rem;
 }
