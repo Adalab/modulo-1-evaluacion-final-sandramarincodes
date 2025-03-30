@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #0c474b;
@@ -96,9 +100,54 @@ header {
 }
 
 .image-content .fourth-image {
+  display: block;
   width: 100%;
   height: auto;
 }
+
 .fourth-module-container h2 {
   margin: 3rem 0 0.5rem;
+}
+
+footer {
+  padding: 3.75rem 0;
+  background-color: #0c474b;
+  position: relative;
+}
+.footer-container {
+  background-color: #0c474b;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 2.5rem;
+}
+
+.contacto-main-container .social-links {
+  display: inline-block;
+  margin-top: 1.5625rem;
+}
+
+.contacto a {
+  display: block;
+}
+
+.scroll-up {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.footer-container a,
+.footer-container h3 {
+  color: #b6c8c9;
+}
+
+.scroll-up {
+  background-color: #0c474b;
 }
