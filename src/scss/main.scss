@@ -25,14 +25,14 @@ h3 {
 
 h1,
 h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .p-small {
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 header {
@@ -48,43 +48,80 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  padding-top: 16px;
 }
 .menu-hamburguer {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 3.4rem 2.5rem;
+  padding: 54.4px 40px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform: translateY(-10%);
 }
 
 .hero-article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 9.9rem 0;
-}
-
-.hero-article .primary-btn {
-  margin-top: 2.7rem;
+  gap: 3.8rem;
 }
 
 .primary-btn {
   display: inline-block;
   color: white;
   background: #0c474b;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   text-align: center;
   text-decoration: none;
+}
+
+.second-module-container {
+  background-color: #f0ebe5;
+  padding: 2.5rem 0;
+}
+
+.second-module-container h2 {
+  text-align: center;
+  margin: 0 2.9rem 3.1rem;
+}
+
+.second-article-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  padding: 0 6.4rem;
+  gap: 4.1rem;
+}
+
+.second-article-container h3 {
+  margin: 3.3rem 0 1.25rem;
+}
+
+.feature {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.feature img {
+  width: 5.6rem;
+  height: auto;
 }
 
 .third-module-container {
   background-color: #ff975a;
   color: white;
   text-align: center;
-  padding: 4rem 0;
+  padding: 64px 0;
   a {
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     color: white;
   }
 }
@@ -95,12 +132,12 @@ header {
 }
 
 .fourth-module-container .text-content {
-  padding: 5.4rem 1.6875rem;
+  padding: 86.4px 27px;
 }
 
 .text-content .primary-btn {
   display: inline-block;
-  margin-top: 2.06rem;
+  margin-top: 32.96px;
 }
 
 .image-content .fourth-image {
@@ -110,11 +147,11 @@ header {
 }
 
 .fourth-module-container h2 {
-  margin: 3rem 0 0.5rem;
+  margin: 48px 0 8px;
 }
 
 footer {
-  padding: 3.75rem 0;
+  padding: 60px 0;
   background-color: #0c474b;
   position: relative;
 }
@@ -124,12 +161,12 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  gap: 2.5rem;
+  gap: 40px;
 }
 
 .contacto-main-container .social-links {
   display: inline-block;
-  margin-top: 1.5625rem;
+  margin-top: 25px;
 }
 
 .contacto a {
@@ -138,13 +175,13 @@ footer {
 
 .scroll-up {
   position: absolute;
-  bottom: 1rem;
-  right: 2rem;
+  bottom: 16px;
+  right: 32px;
 }
 
 .footer a {
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 .footer-container a,
