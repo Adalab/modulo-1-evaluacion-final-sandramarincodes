@@ -331,4 +331,44 @@ footer {
     bottom: 7.8rem;
     right: 11.8rem;
   }
+
+  .fourth-module-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .text-content,
+  .image-content {
+    width: 50%;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .fourth-module-container .text-content {
+    padding: 50px;
+  }
+  .text-content .p-small {
+    font-size: 1rem;
+  }
+
+  .text-inner {
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 262px;
+    text-align: left;
+  }
+
+  .text-inner .primary-btn {
+    align-self: flex-start;
+  }
+
+  .image-content .fourth-image {
+    object-fit: cover;
+  }
 }
