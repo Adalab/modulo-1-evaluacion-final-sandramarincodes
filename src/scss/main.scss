@@ -239,4 +239,19 @@ footer {
   .text-content .primary-btn {
     margin-top: 1.25rem;
   }
+  footer {
+    padding: 4.3rem 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 7.5rem;
+  }
+
+  .scroll-up {
+    position: absolute;
+    bottom: 4.2rem;
+    right: 3.9rem;
+  }
 }
