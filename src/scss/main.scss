@@ -25,14 +25,14 @@ h3 {
 
 h1,
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .p-small {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 header {
@@ -48,13 +48,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 .menu-hamburguer {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 54.4px 40px;
+  padding: 3.4rem 2.5rem;
 }
 
 .hero-container {
@@ -191,4 +191,28 @@ footer {
 
 .scroll-up {
   background-color: #0c474b;
+}
+
+@media all and (min-width: 900px) and (max-width: 1727px) {
+  h1 {
+    font-size: 2.25rem;
+    max-width: 15ch; /* Descubrí esta forma de limitar el ancho del título para así hacer el salto de línea */
+  }
+  .hero-container {
+    justify-content: flex-start;
+    transform: translateY(-14%);
+  }
+
+  .hero-article {
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 0;
+    padding-left: 9.25rem;
+  }
+  .nav-logo-container {
+    padding-top: 2.6875rem;
+  }
+  .menu-hamburguer {
+    padding: 4.8rem 5.4rem;
+  }
 }
