@@ -272,3 +272,16 @@ footer {
     margin: 2.4rem 0 0.5rem;
   }
 }
+
+@media all and (min-width: 1728px) {
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  .third-module-container {
+    padding: 2.5rem 0 5.4rem;
+  }
+  .third-module-container .p-small {
+    margin-top: 0.5rem;
+  }
+}
