@@ -253,7 +253,6 @@ footer {
   }
 
   .scroll-up {
-    position: absolute;
     bottom: 4.2rem;
     right: 3.9rem;
   }
@@ -269,7 +268,6 @@ footer {
   .second-article-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* padding: 0 6.4rem; */
   }
 
   .second-article-container h3 {
@@ -317,5 +315,20 @@ footer {
   }
   .text-desktop {
     display: block;
+  }
+  footer {
+    padding: 7.5rem 0;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 263px;
+  }
+
+  .scroll-up {
+    bottom: 7.8rem;
+    right: 11.8rem;
   }
 }
