@@ -147,7 +147,7 @@ header {
 }
 
 .fourth-module-container h2 {
-  margin: 48px 0 8px;
+  margin: 0 8px;
 }
 
 footer {
@@ -194,6 +194,9 @@ footer {
 }
 
 @media all and (min-width: 900px) and (max-width: 1727px) {
+  h2 {
+    font-size: 1.875rem;
+  }
   h1 {
     font-size: 2.25rem;
     max-width: 15ch; /* Descubrí esta forma de limitar el ancho del título para así hacer el salto de línea pero no sé si existe otra manera de hacerlo */
@@ -219,12 +222,21 @@ footer {
   .third-module-container a {
     margin-top: 1.875rem;
   }
-  
-  .third-module-container h2 {
-    font-size: 1.875rem;
-  }
 
   .third-module-container .p-small {
     margin-top: 1.1rem;
+  }
+
+  .text-content .p-small {
+    max-width: 40ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2rem;
+  }
+  .fourth-module-container .text-content {
+    padding: 4.1rem 0 6.8rem;
+  }
+  .text-content .primary-btn {
+    margin-top: 1.25rem;
   }
 }
