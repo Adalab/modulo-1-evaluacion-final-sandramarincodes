@@ -1,9 +1,44 @@
-@use '../core/variables' as vars;
 
-body {
-    padding: 2rem;
-    height: 100vh;
-    background-image: url('../images/bg-adalab.png');
-    background-color: vars.$color-bg;
-    font-family: vars.$font-main;
-}
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .text-desktop {
+    display: none;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+  }
+  
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  .p-small {
+    font-size: 0.875rem;
+  }
+  
+  .primary-btn {
+    display: inline-block;
+    color: var(--text-on-dark);
+    background: var(--primary-color);
+    padding: .75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+  }
+

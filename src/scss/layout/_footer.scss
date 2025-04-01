@@ -1,10 +1,43 @@
 @use '../core/variables' as vars;
 
-.page__footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
-    color: vars.$color-secondary;
-}
+footer {
+    padding: 60px 0;
+    background-color: var(--primary-color);
+    position: relative;
+    a {
+      text-decoration: none;
+      font-size: 0.875rem;
+    }
+  }
+  .footer-container {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 40px;
+  
+    a,
+    h3 {
+      color: var(--footer-text-color);
+    }
+  }
+  
+  .contacto-main-container {
+    .contacto {
+      a {
+        display: block;
+      }
+    }
+  
+    .social-links {
+      display: inline-block;
+      margin-top: 25px;
+    }
+  }
+  
+  .scroll-up {
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+  }

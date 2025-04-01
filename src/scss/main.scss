@@ -1,200 +1,20 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@use "core/reset";
+@use "layout/page";
+@use "layout/header";
+@use "layout/footer";
+@use "components/second-module";
+@use "components/third-module";
+@use "components/fourth-module";
+
+:root {
+  --primary-color: #0c474b;
+  --background-light: #f0ebe5;
+  --accent-color: #ff975a;
+  --footer-text-color: #b6c8c9;
+  --text-on-dark: white;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-body {
-  font-family: "Poppins", sans-serif;
-  color: #0c474b;
-}
-
-.hidden {
-  display: none;
-}
-.text-desktop {
-  display: none;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 600;
-}
-
-h1,
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-
-.p-small {
-  font-size: 0.875rem;
-}
-
-header {
-  height: 100vh;
-  background-image: url("../../public/images/header.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-}
-
-.nav-logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1rem;
-}
-.menu-hamburguer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 3.4rem 2.5rem;
-}
-
-.hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transform: translateY(-10%);
-}
-
-.hero-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3.8rem;
-}
-
-.primary-btn {
-  display: inline-block;
-  color: white;
-  background: #0c474b;
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.second-module-container {
-  background-color: #f0ebe5;
-  padding: 2.5rem 0;
-}
-
-.second-module-container h2 {
-  text-align: center;
-  margin: 0 2.9rem 3.1rem;
-}
-
-.second-article-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-  padding: 0 6.4rem;
-  gap: 4.1rem;
-}
-
-.second-article-container h3 {
-  margin: 3.3rem 0 1.25rem;
-}
-
-.feature {
-  display: grid;
-  justify-items: center;
-  text-align: center;
-}
-
-.feature img {
-  width: 5.6rem;
-  height: auto;
-}
-
-.third-module-container {
-  background-color: #ff975a;
-  color: white;
-  text-align: center;
-  padding: 3.75rem 0;
-}
-.third-module-container a {
-  display: inline-block;
-  margin-top: 2.5rem;
-  color: white;
-}
-
-.fourth-module-container {
-  text-align: center;
-  background-color: #f0ebe5;
-}
-
-.fourth-module-container .text-content {
-  padding: 86.4px 27px;
-}
-
-.text-content .primary-btn {
-  display: inline-block;
-  margin-top: 32.96px;
-}
-
-.image-content .fourth-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.fourth-module-container h2 {
-  margin: 0 8px;
-}
-
-footer {
-  padding: 60px 0;
-  background-color: #0c474b;
-  position: relative;
-}
-.footer-container {
-  background-color: #0c474b;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  gap: 40px;
-}
-
-.contacto-main-container .social-links {
-  display: inline-block;
-  margin-top: 25px;
-}
-
-.contacto a {
-  display: block;
-}
-
-.scroll-up {
-  position: absolute;
-  bottom: 16px;
-  right: 32px;
-}
-
-.footer a {
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer-container a,
-.footer-container h3 {
-  color: #b6c8c9;
-}
-
-.scroll-up {
-  background-color: #0c474b;
-}
 
 @media all and (min-width: 900px) and (max-width: 1727px) {
   h2 {
@@ -304,7 +124,7 @@ footer {
   .hidden {
     display: block;
     position: relative;
-    z-index: 10; /** Soluición para que los enlaces funcionaran porque las diferentes cajas estaban superpuestas entre sí y no iban **/
+    z-index: 10; /** Soluición para que los enlaces funcionaran porque las diferentes 'cajas' estaban superpuestas entre sí y no iban los enlaces **/
   }
 
   .hidden a {
