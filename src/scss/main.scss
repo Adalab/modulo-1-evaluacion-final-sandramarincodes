@@ -282,6 +282,56 @@ footer {
   h3 {
     font-size: 1.5rem;
   }
+
+  h1 {
+    font-size: 2.25rem;
+    max-width: 15ch; /* Descubrí esta forma de limitar el ancho del título para así hacer el salto de línea pero no sé si existe otra manera de hacerlo */
+  }
+  .hero-container {
+    justify-content: flex-start;
+    transform: translate(3%, -9%);
+  }
+
+  .hero-article {
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 0;
+    padding-left: 9.25rem;
+  }
+  .menu-hamburguer {
+    display: none;
+  }
+  .hidden {
+    display: block;
+    position: relative;
+    z-index: 10; /** Soluición para que los enlaces funcionaran porque las diferentes cajas estaban superpuestas entre sí y no iban **/
+  }
+
+  .hidden a {
+    text-decoration: none;
+    color: #0c474b;
+  }
+
+  .hidden ul {
+    list-style: none;
+    display: flex;
+    gap: 2.3rem;
+  }
+  .nav-logo-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12.5rem;
+    padding-top: 5.6rem;
+  }
+
+  .logo-img-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+
   .third-module-container {
     padding: 2.5rem 0 5.4rem;
   }
@@ -359,8 +409,8 @@ footer {
   .text-inner {
     display: flex;
     flex-direction: column;
-    padding-left: 150px;
-    padding-right: 262px;
+    padding-left: 9.3rem;
+    padding-right: 16.3rem;
     text-align: left;
   }
 
