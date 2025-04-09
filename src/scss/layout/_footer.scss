@@ -1,25 +1,28 @@
 @use '../core/variables' as vars;
 
 footer {
-    padding: 60px 0;
-    background-color: var(--primary-color);
+    padding: 3.75rem 0;
+    background-color: vars.$primary-color;
     position: relative;
     a {
       text-decoration: none;
       font-size: 0.875rem;
     }
+    ul {
+      list-style: none;
+    }
   }
   .footer-container {
-    background-color: var(--primary-color);
+    background-color: vars.$primary-color;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    gap: 40px;
+    gap: 2.5rem;
   
     a,
     h3 {
-      color: var(--footer-text-color);
+      color: vars.$footer-text-color;
     }
   }
   
@@ -32,12 +35,12 @@ footer {
   
     .social-links {
       display: inline-block;
-      margin-top: 25px;
+      margin-top: 1.56rem;
     }
   }
   
   .scroll-up {
     position: absolute;
-    bottom: 16px;
-    right: 32px;
+    bottom: 1rem;
+    right: 2rem;
   }

@@ -1,6 +1,8 @@
+@use '../core/variables' as vars;
+
 .fourth-module-container {
     text-align: center;
-    background-color: var(--background-light);
+    background-color: vars.$background-light;
   
     .text-content {
       padding: 5.4rem 1.6rem;

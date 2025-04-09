@@ -6,15 +6,14 @@
 @use "components/third-module";
 @use "components/fourth-module";
 
-:root {
-  --primary-color: #0c474b;
-  --background-light: #f0ebe5;
-  --accent-color: #ff975a;
-  --footer-text-color: #b6c8c9;
-  --text-on-dark: white;
+@use "./core/variables" as vars;
+
+h1,
+h2,
+h3,
+p {
+  color: vars.$primary-color;
 }
-
-
 
 @media all and (min-width: 900px) and (max-width: 1727px) {
   h2 {
@@ -124,12 +123,12 @@
   .hidden {
     display: block;
     position: relative;
-    z-index: 10; /** Soluición para que los enlaces funcionaran porque las diferentes 'cajas' estaban superpuestas entre sí y no iban los enlaces **/
+    z-index: 10; /** Solución para que los enlaces funcionaran porque las diferentes 'cajas' estaban superpuestas entre sí y no iban los enlaces **/
   }
 
   .hidden a {
     text-decoration: none;
-    color: #0c474b;
+    color: vars.$primary-color;
   }
 
   .hidden ul {

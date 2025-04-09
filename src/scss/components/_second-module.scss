@@ -1,5 +1,7 @@
+@use '../core/variables' as vars;
+
 .second-module-container {
-    background-color: var(--background-light);
+    background-color: vars.$background-light;
     padding: 2.5rem 0;
     h2 {
       text-align: center;
